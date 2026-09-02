@@ -4,7 +4,7 @@ seoDescription: "Learn how to build AI agents across the Microsoft ecosystem. Co
 datePublished: 2026-07-05T08:39:50.957Z
 cuid: cmr7jiweb00000bkm5aps9z98
 slug: agents-for-copilot-foundry
-cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/0704ce7e-5cd7-497c-824a-12f67138303c.jpg
+cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/97135c80-46eb-447b-8a12-a6c4769f2234.jpg
 ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/758a6354-820b-4f48-82ed-f987e3f7cfce.jpg
 tags: azure, microsoft-azure, copilot, copilotstudio
 
