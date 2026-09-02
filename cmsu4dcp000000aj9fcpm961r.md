@@ -5,7 +5,7 @@ seoDescription: "Implement an enterprise Azure tagging strategy. Align metadata 
 datePublished: 2026-08-15T08:34:02.262Z
 cuid: cmsu4dcp000000aj9fcpm961r
 slug: resource-tags
-cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/aa28984d-d86f-401a-a819-138433e60599.jpg
+cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/3a71ffa7-96e0-436d-aa9b-3b5b80ffaac8.jpg
 ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/f4e387cf-0ecb-424e-b9d3-8748d5cb2018.jpg
 tags: cloud, azure, tags
 
