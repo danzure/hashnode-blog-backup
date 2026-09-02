@@ -1,10 +1,10 @@
 ---
-title: "A is for Artificial Intelligence (AI)"
+title: "The A-Z of Azure: A is for Artificial Intelligence (AI)"
 seoTitle: "How To Understand Azure AI Tools: A Beginner's Guide"
 seoDescription: "Overwhelmed by Microsoft's AI ecosystem? This beginners guide breaks down Azure AI Services, OpenAI, Machine Learning, and Foundry into simple terms."
 datePublished: 2026-05-26T06:31:42.607Z
 cuid: cmpm9c1e500qk2cjv45ykcw8j
-slug: a-is-for-artificial-intelligence-ai
+slug: the-a-z-of-azure-a-is-for-artificial-intelligence-ai
 cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/1e35b5ef-3898-46e0-befd-a224eb77e5f2.jpg
 ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/78716513-8259-4f6f-a79b-e93f96081da7.jpg
 tags: ai, azure, microsoftfoundry
