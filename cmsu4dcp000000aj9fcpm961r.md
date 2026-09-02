@@ -1,10 +1,10 @@
 ---
-title: "The A-Z of Azure: T is for Tags"
+title: "T is for Tagging"
 seoTitle: "Azure Tagging Strategy Guide: Governanc & Best Practice"
 seoDescription: "Implement an enterprise Azure tagging strategy. Align metadata with the WAF, enforce Azure Policy, and reduce cloud costs."
 datePublished: 2026-08-15T08:34:02.262Z
 cuid: cmsu4dcp000000aj9fcpm961r
-slug: the-a-z-of-azure-t-is-for-tags
+slug: t-is-for-tagging
 cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/aa28984d-d86f-401a-a819-138433e60599.jpg
 ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/f4e387cf-0ecb-424e-b9d3-8748d5cb2018.jpg
 
