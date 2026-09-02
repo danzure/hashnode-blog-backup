@@ -6,7 +6,7 @@ datePublished: 2026-08-15T08:34:02.262Z
 cuid: cmsu4dcp000000aj9fcpm961r
 slug: resource-tags
 cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/3a71ffa7-96e0-436d-aa9b-3b5b80ffaac8.jpg
-ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/f4e387cf-0ecb-424e-b9d3-8748d5cb2018.jpg
+ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/976c4f34-e198-4203-96f5-15f9487032dd.jpg
 tags: cloud, azure, tags
 
 ---
