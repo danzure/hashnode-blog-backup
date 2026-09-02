@@ -5,8 +5,8 @@ seoDescription: "Overwhelmed by Microsoft's AI ecosystem? This beginners guide b
 datePublished: 2026-05-26T06:31:42.607Z
 cuid: cmpm9c1e500qk2cjv45ykcw8j
 slug: the-a-z-of-azure-a-is-for-artificial-intelligence-ai
-cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/1e35b5ef-3898-46e0-befd-a224eb77e5f2.jpg
-ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/78716513-8259-4f6f-a79b-e93f96081da7.jpg
+cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/70c0087c-227a-462c-ad13-69e3f44711b3.jpg
+ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/9b5cbdb3-00d3-42b3-b55c-03371580abd7.jpg
 tags: ai, azure, microsoftfoundry
 
 ---
