@@ -3,8 +3,9 @@ title: "Blueprint: How to Become Microsoft Certified"
 seoDescription: "Kickstart your IT career with my guide to Microsoft Certifications. Learn how to choose the right Azure exam, best study resources and booking tips."
 datePublished: 2026-01-15T23:12:13.035Z
 cuid: cmkg2e3u2000102l1atdo6lzz
-slug: blueprint-how-to-become-microsoft-certified
+slug: how-to-become-microsoft-certified
 cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/3e69aa6b-dacd-4236-8aaa-ef62f5429cc8.jpg
+ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/c87501f2-bdac-4856-8ecf-37f6b59c79c4.jpg
 tags: cloud, microsoft, azure, certification, microsoft365
 
 ---
