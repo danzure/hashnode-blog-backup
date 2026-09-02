@@ -5,8 +5,8 @@ seoDescription: "Implement an enterprise Azure tagging strategy. Align metadata 
 datePublished: 2026-08-15T08:34:02.262Z
 cuid: cmsu4dcp000000aj9fcpm961r
 slug: the-a-z-of-azure-t-is-for-tags
-cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/a2039496-33ba-4f3e-a7b0-04a6be371894.jpg
-ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/d6fbbc18-73fc-4f03-ace3-2a6abfdc56a2.png
+cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/aa28984d-d86f-401a-a819-138433e60599.jpg
+ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/f4e387cf-0ecb-424e-b9d3-8748d5cb2018.jpg
 
 ---
 
