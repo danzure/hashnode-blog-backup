@@ -5,8 +5,8 @@ seoDescription: "Learn how Azure Health Modelling simplifies cloud monitoring by
 datePublished: 2026-09-02T06:53:37.180Z
 cuid: cmtjqpjq000040agmb7z16pox
 slug: azure-health-modelling-explained
-cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/886e9057-2c8c-41e0-b9fb-f51bc6722e35.jpg
-ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/ceae3f1c-9421-4fb0-8fbd-e8342620b7fd.jpg
+cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/9f2dd5da-5f26-478c-8737-3569dbe06c6f.jpg
+ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/8d613f7d-fc42-4226-89a7-e2ae62365c74.jpg
 tags: cloud, azure, cloud-computing, microsoft-azure
 
 ---
