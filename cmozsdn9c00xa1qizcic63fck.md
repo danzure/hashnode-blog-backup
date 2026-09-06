@@ -4,10 +4,10 @@ seoTitle: "Azure Resource Groups Explained: A Guide to Logical Grouping"
 seoDescription: "Organise Microsoft Azure workloads and manage lifecycles with Resource Groups. Learn cost optimisation best practices in this beginner cloud guide."
 datePublished: 2026-05-10T13:06:08.257Z
 cuid: cmozsdn9c00xa1qizcic63fck
-slug: resource-groups
+slug: atozazure-resource-groups
 cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/1f843e58-8a9a-48f3-914e-2d88637243c5.jpg
 ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/357e1259-e6ce-47b6-b616-d0e8a7210b7e.jpg
-tags: microsoft, azure, fundamentals, microsoft-azure
+tags: microsoft, azure
 
 ---
 
