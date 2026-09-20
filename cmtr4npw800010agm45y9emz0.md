@@ -13,7 +13,7 @@ tags: microsoft, azure, tags, well-architected-framework
 
 ### Introduction
 
-So far in the series, we've covered [Subscriptions](https://blog.atozazure.com/subscriptions) and we've covered [Resource Groups](https://blog.atozazure.com/resource-groups). For the third entry in the series I want to cover tagging or tags, I skipped over these in my previous entry for this reason alone in that I wanted to do an entire post about tagging and well here it is! I'll cover what tags are, what they are for and why they are one of the most important elements in your journey to learning Azure.
+So far in the series, we've covered [Subscriptions](https://blog.atozazure.com/atozazure-subscriptions) and we've covered [Resource Groups](https://blog.atozazure.com/atozazure-resource-groups). For the third entry in the series I want to cover tagging or tags, I skipped over these in my previous entry for this reason alone in that I wanted to do an entire post about tagging and well here it is! I'll cover what tags are, what they are for and why they are one of the most important elements in your journey to learning Azure.
 
 ### What are Azure Tags?
 
