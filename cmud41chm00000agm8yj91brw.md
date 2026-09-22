@@ -7,7 +7,7 @@ cuid: cmud41chm00000agm8yj91brw
 slug: azure-governance-toolkit
 cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/a3b06350-ce57-406d-83cd-6eaca66e411d.jpg
 ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/c897a452-728a-4286-a40d-eb75c0af33c0.jpg
-tags: azure, devops, terraform, finops, zerotrust, cloudarchitecture, well-architected-framework, cloud-adoption-framework
+tags: ai, azure, devops, terraform, azure-devops, azure-certified, governance, finops, zerotrust, ai-tools, cloudarchitecture, well-architected-framework, cloud-adoption-framework
 
 ---
 
