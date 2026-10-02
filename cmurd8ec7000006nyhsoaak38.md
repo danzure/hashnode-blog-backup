@@ -11,60 +11,33 @@ tags: azure, updates, atozazure
 
 ---
 
+Welcome to this week’s Microsoft Azure platform roundup. Keeping pace with cloud evolution is critical for maintaining performant, secure, and cost-effective environments. Below is a curated summary of key features, general availability milestones, previews, and service lifecycle notices announced over the past seven days to help you plan your architecture and engineering roadmaps.
+
 ## Compute & Containers
 
-*   **Storage-Optimised Lasv5 and Laosv5 VM Series** *(Generally Available)*  
-    Powered by 5th Gen AMD EPYC™ processors (Turin), these newly launched virtual machine sizes offer up to 160 vCPUs, 8 GiB RAM per core, and 720 GB of local NVMe disk capacity per vCPU. They deliver substantial throughput and low-latency disk IOPS for dense databases, data warehouses, and large-scale big data workloads on **Azure Virtual Machines**.
-    
-*   **Automatic Zone Placement for Virtual Machine Scale Sets** *(In Preview)*  
-    Azure can now dynamically balance and place VM instances across optimal Availability Zones based on real-time datacentre capacity, SKU health, and resource distribution. This simplifies high-availability deployments by removing the overhead of hardcoding or manually managing zone distribution across **Azure Virtual Machine Scale Sets (VMSS)**.
-    
-*   **Ubuntu 26.04 LTS Worker Node Pools** *(In Preview)*  
-    Cluster operators can now deploy `Ubuntu2604` minimal OS images for node pools in **Azure Kubernetes Service (AKS)**. The streamlined base image reduces container footprint, accelerates node provisioning and scale-out times, and significantly reduces the host attack surface.
-    
-*   **Retirement: Functions v1 Hosting on Azure Container Apps** *(Retiring)*  
-    Microsoft has set a retirement milestone of 29 September 2027 for the legacy v1 hosting model of Azure Functions within **Azure Container Apps**. Teams running legacy microservice architectures should plan migrations toward modern containerised runtimes to ensure ongoing support.
-    
-*   **Retirement: Dv3, Dsv3, Ev3, and Esv3 VM Families** *(Retiring)*  
-    The ubiquitous v3 general-purpose and memory-optimised instances have entered their formal decommissioning schedule ahead of their 15 November 2029 sunset date. Operators should evaluate newer AMD (v5/v6) or Intel iterations to achieve better price-performance across their **Azure Virtual Machines** estate.
-    
-*   **Decommissioned: NVv3 and NVv4 GPU Workstations** *(Retired)*  
-    Effective 30 September 2026, the older NVIDIA (NVv3) and AMD Radeon Instinct (NVv4) virtual workstation SKUs have reached full end-of-life status. Workloads must transition to current NV-series alternatives on **Azure Virtual Machines**.
-    
+* **Storage Optimized Lasv5 and Laosv5 Virtual Machine Series** *(Generally Available)*  
+  Microsoft has launched the AMD EPYC (Turin)-powered Lasv5 and Laosv5 VM sizes, offering up to 160 vCPUs, 8 GiB of memory per core, and direct local NVMe capacity. This architectural addition provides high IOPS and high-throughput local disk storage suited for data-intensive transaction processing and indexing workloads in **Azure Virtual Machines**.
+* **Automatic Zone Placement for Virtual Machine Scale Sets** *(In Preview)*  
+  A new intelligent orchestration feature dynamically assigns optimal availability zones for scale-out sets based on real-time datacentre capacity and SKU availability. This mitigates capacity constraint deployment failures and removes manual zone mapping overhead across **Azure Virtual Machine Scale Sets (VMSS)**.
+* **Azure Container Apps Express** *(Generally Available)*  
+  The platform now provides a lightweight hosting tier featuring sub-second provisioning and automatic scale-to-zero capabilities without requiring upfront environment configuration. This streamlines containerised microservice deployments and minimises idle compute costs in **Azure Container Apps**.
+* **Ubuntu 26.04 LTS Node Pool Support** *(In Preview)*  
+  Cluster operators can now deploy node pools based on the Ubuntu 26.04 Minimal OS image SKU. This reduces container host attack surfaces and operational footprint whilst aligning lifecycle roadmaps in **Azure Kubernetes Service (AKS)**.
+* **Retirement Notice: Dv3, Dsv3, Ev3, and Esv3 VM Series** *(Retiring)*  
+  Microsoft has formally announced the end-of-life roadmap for legacy general-purpose and memory-optimised v3 virtual machines, setting a final retirement date of 15 November 2029. Engineering teams must schedule migration paths toward modern v5 or v6 hardware generations within **Azure Virtual Machines**.
+* **Retirement Notice: Azure Functions v1 Hosting on Azure Container Apps** *(Retiring)*  
+  Support for the Functions v1 execution runtime hosted within containerised environments will cease on 29 September 2027. Teams running serverless code workloads must upgrade application code to modern runtime targets within **Azure Functions** and **Azure Container Apps**.
+* **Retirement Milestone: NVv3 and NVv4 GPU Virtual Machines** *(Retired)*  
+  Effective 30 September 2026, the older generation Nvidia (NVv3) and AMD (NVv4) GPU virtual machines have reached final retirement in public regions. Unmigrated workloads running on these instances will be deallocated and must be transitioned to current NV-series SKUs in **Azure Virtual Machines**.
 
-* * *
+## AI & Tooling
 
-## AI & Platform Tooling
+* **Azure Canvases for GitHub Copilot** *(Generally Available)*  
+  Microsoft has introduced collaborative, interactive workspaces that embed live cloud telemetry, architectural dashboards, and deployment automation directly alongside developer conversations. This eliminates context-switching and enhances governance when inspecting environments via **GitHub Copilot in Azure**.
 
-*   **Azure Canvases for GitHub Copilot** *(Generally Available)*  
-    Engineering teams can now take advantage of interactive, contextual visual canvases within Copilot chat. This feature integrates infrastructure telemetry, cost exploration, and direct provisioning guidance natively inside developer workflows across **GitHub Copilot and Azure Developer Tools**.
-    
+## Databases & Storage
 
-* * *
-
-## Databases & Hybrid Infrastructure
-
-*   **Built-in Performance Monitoring for SQL Server on Azure VMs** *(In Preview)*  
-    Managed query telemetry and diagnostic tracking are now available natively without requiring custom maintenance scripts or third-party agent installations, providing streamlined operational observability for **SQL Server on Azure Virtual Machines**.
-    
-*   **Flexible Compute-to-Memory Allocation for SQL Managed Instance** *(Generally Available)*  
-    Database administrators can now dynamically modify memory ratios without undergoing costly tier migrations. This enables granular tuning for high-cache, memory-intensive transactional workloads hosted on **Azure SQL Managed Instance**.
-    
-*   **Azure Arc-Enabled SQL Server Expansion** *(Generally Available)*  
-    Governance, automated security patching, licensing optimisation, and compliance posture assessments through **Azure Arc** are now locally available in the Germany West Central and Italy North cloud regions for hybrid and multi-cloud database estates.
-    
-
-* * *
-
-## Governance, Continuity & Edge Infrastructure
-
-*   **Instant Access for VM Restore Points** *(Generally Available)*  
-    Disaster recovery runbooks receive a major boost with instantaneous disk recovery from application-consistent snapshots for Premium SSD v2 and Ultra Disk configurations, dramatically reducing Recovery Time Objectives (RTO) via **Azure Backup**.
-    
-*   **Luxembourg Extended Zone** *(Generally Available)*  
-    Organizations requiring ultra-low-latency processing or strict local data residency can now deploy compute and storage resources at the new Luxembourg edge site connected back to core European regions through **Azure Extended Zones**.
-    
-
-* * *
-
-*Did any of these updates affect your current architecture or migration roadmap? Let us know your thoughts or implementation questions in the comments below.*
+* **Managed SQL Performance Monitoring on Azure VMs** *(In Preview)*  
+  A native, Microsoft-managed observability solution now captures and correlates diagnostic counters directly without requiring third-party monitoring agents or custom telemetry scripts. This accelerates database root-cause analysis and reduces operational overhead for **SQL Server on Azure Virtual Machines**.
+* **Azure Arc-Enabled SQL Server Regional Expansion** *(Generally Available)*  
+  Centralised Azure governance, vulnerability assessment, automated patching, and hybrid license management have been extended to the Germany West Central and Italy North regions. This provides unified compliance and posture control for on-premises and edge databases integrated with **Azure Arc**.
