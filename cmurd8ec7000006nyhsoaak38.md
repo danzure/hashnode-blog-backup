@@ -5,7 +5,7 @@ seoDescription: "This week's Azure platform news, covering AMD EPYC VM launches,
 datePublished: 2026-10-02T19:38:13.809Z
 cuid: cmurd8ec7000006nyhsoaak38
 slug: weekly-wrap-20102026
-cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/9db1d9a4-c0f4-4cbb-9ff8-aa95007a00c1.jpg
+cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/b8a5ed1b-d114-4f38-bf6f-5ff4c1a9186b.jpg
 ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/5a5b9e27-f957-4b39-b790-320f90a51ea2.jpg
 tags: azure, updates, atozazure
 
