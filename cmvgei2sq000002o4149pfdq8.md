@@ -38,6 +38,8 @@ Okay, but why would I actually use management groups? Well, there are a number o
 
 Before you jump into the Azure Portal and start clicking around, it pays to do a little bit of whiteboard planning. Microsoft allows up to **10,000 management groups** in a single directory and a hierarchy up to **6 levels deep** (excluding the Tenant Root Group and the subscriptions themselves)—but just because you *can* go six levels deep doesn't mean you *should*!
 
+If you don't have a physical whiteboard handy, I've built a free web-based [Management Group Planner Tool](https://app.atozazure.com/management-groups) that you can use to visually map out and test your hierarchy before deploying anything in Azure.
+
 When planning your hierarchy, keep these two golden rules in mind:
 
 *   **Organisational Alignment:** Structure your hierarchy to match how your business actually operates and governs its workloads. This could be broken down by **environment type** (e.g., *Production* vs. *Non-Production*—just like in the diagram above), **business unit** (e.g., *HR* vs. *Finance*), or **geography** (e.g., *UK* vs. *US*).
