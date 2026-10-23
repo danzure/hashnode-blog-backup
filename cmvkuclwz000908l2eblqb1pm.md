@@ -4,7 +4,7 @@ seoTitle: "Azure Weekly Wrap: 23rd Oct 2026"
 seoDescription: "Monitor metrics insights, DNS Traffic Manager links, Managed HSM external keys, and VMSS automatic zone balance."
 datePublished: 2026-10-23T10:42:42.809Z
 cuid: cmvkuclwz000908l2eblqb1pm
-slug: the-a-z-weekly-wrap-23rd-october-2026
+slug: weekly-wrap-23102026
 cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/489c585a-a620-46b3-87cb-c0bc8fca2ecd.jpg
 ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/72fed6dd-725c-4bb7-98b7-14a7b6da4c5d.jpg
 tags: azure, security, networking, containers, update, governance, atozazure
