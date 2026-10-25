@@ -54,12 +54,9 @@ Focusing on the "Full" certifications, if you look at the [**Become Microsoft Ce
 
 **2\. Role-Based** The next step up is the "Role-Based" tier. These are the bread and butter of IT professionals and are split into two distinct levels:
 
-*   **Associate (Intermediate):** These exams test your practical, hands-on knowledge of tools and services. Microsoft generally recommends six months of experience, but I would personally recommend around **12 months** of hands-on exposure to really feel comfortable.
-    
-*   **Expert (Advanced):** These test your ability to translate practical skills into high-level technical designs. The focus shifts heavily towards architecture pillars like cost vs. performance, redundancy, and security. It is recommended to have **2–3 years** of experience here.
-    
-    *   *The Catch:* Most Expert certifications have a prerequisite. For example, to earn the **Microsoft Certified: Azure Solutions Architect Expert**, passing the **AZ-305** exam isn't enough; you must *also* hold the **AZ-104 (Administrator)** certification.
-        
+- **Associate (Intermediate):** These exams test your practical, hands-on knowledge of tools and services. Microsoft generally recommends six months of experience, but I would personally recommend around **12 months** of hands-on exposure to really feel comfortable.
+- **Expert (Advanced):** These test your ability to translate practical skills into high-level technical designs. The focus shifts heavily towards architecture pillars like cost vs. performance, redundancy, and security. It is recommended to have **2–3 years** of experience here.
+  - *The Catch:* Most Expert certifications have a prerequisite. For example, to earn the **Microsoft Certified: Azure Solutions Architect Expert**, passing the **AZ-305** exam isn't enough; you must *also* hold the **AZ-104 (Administrator)** certification.
 
 **3\. Specialty** As the name implies, these are focused on specific niche solutions within the cloud. They are perfect for those who want to deep-dive into a particular technology, such as **AZ-140: Azure Virtual Desktop (AVD)**.
 
@@ -85,12 +82,9 @@ Once you’ve chosen a path or an exam you want to take, this is where you’ll 
 
 For most certifications there are a lot of resources you can use, both official (material provided by Microsoft) and non-official (material provided by third parties) and within that, the resources then fall into three different categories. I personally use a combination of all three as this is what works for me, but you might learn differently but these are as follows:
 
-*   **Microsoft Learn:** This is your foundation. It's Microsoft's own free learning platform, offering structured, self-paced modules for every exam on offer. The content is always aligned with the latest updates to the exam material and consists typically of written materials with some ‘try-this’ style exercises.
-    
-*   **Video Courses:** As the name suggests, these are generally full video series on the course material with demos and visuals to help you learn. You can use reputable platforms like **Udemy** or **Pluralsight**, that are great for east to digest even on the commute to work every morning. I recommended going with instructors or courses from high rated trainers such as **Scott Duffy** or [John Savill](https://www.youtube.com/@NTFAQGuy) on **YouTube** who offers great study crams across a number of Microsoft certifications.
-    
-*   **Hands-on Labs**: If you're like me, I generally learn more by ‘doing something’ rather than just reading about it so rather than just reading how to create an Azure Virtual Desktop, go create one and try to connect it and use it. As someone who has worked in Azure for four, going on five years hands-on experience is crucial especially if you want to tackle those Associate and Expert level certifications, I created a guide in my [Getting Started with Azure](https://a-z-ure.blog/g-is-for-getting-started-with-azure) on how to setup your own subscription for practice at home without breaking the bank.
-    
+- **Microsoft Learn:** This is your foundation. It's Microsoft's own free learning platform, offering structured, self-paced modules for every exam on offer. The content is always aligned with the latest updates to the exam material and consists typically of written materials with some ‘try-this’ style exercises.
+- **Video Courses:** As the name suggests, these are generally full video series on the course material with demos and visuals to help you learn. You can use reputable platforms like **Udemy** or **Pluralsight**, that are great for east to digest even on the commute to work every morning. I recommended going with instructors or courses from high rated trainers such as **Scott Duffy** or [John Savill](https://www.youtube.com/@NTFAQGuy) on **YouTube** who offers great study crams across a number of Microsoft certifications.
+- **Hands-on Labs**: If you're like me, I generally learn more by ‘doing something’ rather than just reading about it so rather than just reading how to create an Azure Virtual Desktop, go create one and try to connect it and use it. As someone who has worked in Azure for four, going on five years hands-on experience is crucial especially if you want to tackle those Associate and Expert level certifications, I created a guide in my [Getting Started with Azure](https://a-z-ure.blog/g-is-for-getting-started-with-azure) on how to setup your own subscription for practice at home without breaking the bank.
 
 ### Stage 2: Practice Exams
 
@@ -128,10 +122,8 @@ You will then be transferred to the Pearson Vue once you have filled out and sub
 
 Once you have been transferred to the Pearson Vue site the first option you will need to choose is where you’re going to take your exam, there are two main options to choose from:
 
-1.  **Test centre (In-Person)** - Travel to and take the exam at a dedicated testing centre, operated and managed by PearsonVue.
-    
-2.  **OnVue (Online/ Remote)** - Allows you to take the exam at home or at a remote location in your own space.
-    
+1. **Test centre (In-Person)** - Travel to and take the exam at a dedicated testing centre, operated and managed by PearsonVue.
+2. **OnVue (Online/ Remote)** - Allows you to take the exam at home or at a remote location in your own space.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1767044210595/a31cd581-2482-4e15-af15-c77eec1e7df4.png align="center")
 
@@ -139,7 +131,7 @@ Once you have been transferred to the Pearson Vue site the first option you will
 
 Depending on what option you chose to take your exam, will depend on the experience. If you chose to take your exam at a test centre, then the process is fairly straightforward. Once you arrive at the test centre the staff on site will guide you through the steps and what you need to do, things like phones will be locked away in lockers that type of thing.
 
-However, if you are taking the exam at home then there are certain requirements and steps you need to do to ensure a space within your home meets those exam requirements otherwise PearsonVue may cancel your exam, you can read the full details on how to setup your space [here](https://www.pearsonvue.com/us/en/microsoft.html) and if this is your first time taking an exam, Microsoft also have a link at the bottom of each certification page where you can [take a practice assessment](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/practice/assessment?assessment-type=practice&assessmentId=23&practice-assessment-type=certification) that will run through a short demo of how the full exam will look.
+However, if you are taking the exam at home then there are certain requirements and steps you need to do to ensure a space within your home meets those exam requirements otherwise PearsonVue may cancel your exam, you can read the full details on how to setup your space [here](https://www.pearsonvue.com/us/en/microsoft.html) and if this is your first time taking an exam, Microsoft also have a link at the bottom of each certification page where you can [take a practice assessment](https://www.starttest.com/ITDVersions/26.1.0.0/ITDStart.aspx?SVC=30568248-5da0-4ae7-9d56-40d2d7004315&Json=1) that will run through a short demo of how the full exam will look.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1768517954537/6da48170-4093-4a14-8bde-185939767a5f.png align="center")
 
