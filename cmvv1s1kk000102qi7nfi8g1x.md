@@ -5,7 +5,7 @@ seoDescription: "Latest Azure platform updates for 30th October 2026, covering k
 datePublished: 2026-10-30T14:08:21.995Z
 cuid: cmvv1s1kk000102qi7nfi8g1x
 slug: weekly-wrap-30102026
-cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/76555099-8f82-4f03-abfa-7cbdf45f3f6b.jpg
+cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/ce646f06-deda-4a39-9b21-a21667a58947.jpg
 ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/521b7737-da6c-4394-b018-4de51597b719.jpg
 tags: azure, security, databases, devops, networking, containers, update, compute, atozazure
 
