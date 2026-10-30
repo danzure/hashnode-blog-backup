@@ -11,35 +11,33 @@ tags: azure, security, databases, devops, networking, containers, update, comput
 
 ---
 
-Welcome to this week’s atozazure weekly wrap for the 30 October 2026. Below are all the key platform changes, additions and retirements for the past week.
+Welcome to this week’s atozazure weekly wrap for the 30th October 2026. Below are all the key platform changes, additions and retirements for the past week.
 
-## Compute & Storage
+## Storage & Databases
 
-- **Item-Level Recovery for Azure VMs with Premium SSD v2 and Ultra Disks** *(Generally Available)*\
-  Granular single-file and folder-level restore capabilities are now supported across virtual machines backed by Premium SSD v2 and Ultra Disks with both 512-byte and 4 KB logical sector configurations. This eliminates the necessity of restoring entire disk volumes for targeted operational recovery, substantially lowering operational recovery time objectives (RTO) and egress storage costs in **Azure Backup**.
-- **ABFS Vectored Read for Azure Data Lake Storage** *(Generally Available)*\
-  Compatible big data and distributed analytics runtimes can now issue non-contiguous, batched asynchronous vector read requests against target object stores. This significantly reduces overall storage request overhead and network round-trips for selective columnar and analytical queries hosted on **Azure Data Lake Storage Gen2**.
-- **Automatic Zone Balance for Virtual Machine Scale Sets** *(Generally Available)*\
-  Autonomous cross-zone distribution monitoring and dynamic node rebalancing have been integrated directly into scalable compute topologies. This mitigates infrastructure drift and bolsters zonal resilience during degradation events without manual rebalancing interventions across **Azure Virtual Machine Scale Sets**.
+- **Azure Backup: Item-Level Recovery for Premium SSD v2 and Ultra Disks** *(Generally Available)*\
+  Azure Backup now enables Item-Level Recovery (ILR) for virtual machines running on Premium SSD v2 and Ultra Disks supporting both 512-byte and 4KB logical sector sizes. This capability significantly improves recovery point objectives (RPO) and operational agility by allowing granular file and folder extraction without requiring full volume or virtual machine restores in **Azure Backup**.
+- **Azure Data Lake Storage: ABFS Vectored Read** *(Generally Available)*\
+  The Azure Blob File System (ABFS) driver now supports Vectored Read APIs, coalescing disjointed columnar file segments into unified asynchronous read requests. This architectural enhancement cuts round-trip request overhead and latency significantly for analytics engines querying Parquet and ORC formats hosted on **Azure Data Lake Storage**.
+- **Azure Cosmos DB: Safe Key Rotation** *(Generally Available)*\
+  Safe Key Rotation introduces automated pre-flight validation against account key access logs, blocking key regeneration if active transactions occurred within the preceding 12 hours. This eliminates accidental production outages caused by premature credential revocation during secrets lifecycle transitions or migration to Microsoft Entra ID in **Azure Cosmos DB**.
 
-## Networking & Security
+## Identity & Access Management
 
-- **Keyless TLS on Application Gateway with Managed HSM** *(Generally Available)*\
-  Hardware-isolated cryptographic offloading is now operational for layer-7 ingress traffic, completing TLS handshake signatures directly inside dedicated FIPS 140-2 Level 3 cryptographic boundaries without exporting private keys. This reinforces strict zero-trust and digital sovereignty perimeters for ingress endpoints managed through **Azure Application Gateway** and **Azure Key Vault Managed HSM**.
-- **Service Tag Matching for Azure Front Door Premium WAF** *(Generally Available)*\
-  Custom Web Application Firewall inspection logic can now incorporate native Microsoft service tag definitions within rule criteria. This simplifies edge security governance and perimeter routing enforcement by dynamically maintaining Microsoft-managed IP ranges within **Azure Front Door**.
-- **Disable VNet Peering Route (DPR)** *(In Preview)*\
-  Granular routing control now allows platform engineers to selectively suppress default system-generated peering routes across individual subnet route tables. This enables deterministic transit hub enforcement and strict egress traffic inspection patterns through central network virtual appliances in **Azure Virtual Network**.
-- **Azure DNS Integration with Traffic Manager Linked Records** *(Generally Available)*\
-  Direct record linking enables native DNS-based traffic steering and health probing without provisioning intermediate CNAME records at apex domains. This optimises multi-region failover latency, simplifies root-domain zone architecture, and improves routing performance within **Azure DNS**.
+- **Microsoft Entra ID: Choose Your Own Telephony (CYOT)** *(In Preview)*\
+  Organizations can now integrate approved third-party telecommunications providers to deliver SMS and voice multi-factor authentication (MFA) verifications directly. This provides enhanced compliance and cost control over telephony routes, bypassing standard platform SMS delivery rails for **Microsoft Entra ID**.
+- **Entra Global Secure Access Client for Windows v2.34.222** *(Generally Available)*\
+  The latest Windows client update adds refined local network bypass rules, granular Conditional Access evaluation points, and expanded client-side connection telemetry. These enhancements reduce network path friction for split-tunnel scenarios and accelerate diagnostics in **Microsoft Entra Private Access** and **Microsoft Entra Internet Access**.
 
-## Identity & Governance
+## Networking & Infrastructure
 
-- **Safe Key Rotation Metadata for Azure Cosmos DB** *(Generally Available)*\
-  Administrative planes now expose granular last-used timestamp telemetry alongside master and secondary access keys. This visibility enables security operations teams to confidently plan, execute, and validate zero-downtime secret rotations while deprecating stale access keys across **Azure Cosmos DB**.
-- **Choose Your Own Telephony (CYOT) Provider for Entra** *(Generally Available)*\
-  Enterprises can now route multi-factor authentication SMS and voice verification traffic through existing, enterprise-contracted third-party telecommunications carriers. This expands carrier diversity, optimises regional messaging costs, and meets strict corporate regulatory agreements within **Microsoft Entra ID**.
-- **Advanced Platform Metrics & Metrics Usage Insights** *(Generally Available)*\
-  High-fidelity platform signals alongside granular workspace metric consumption telemetry are now accessible across central operational dashboards. This enables platform administrators to profile metric ingestion costs, detect unutilised monitoring sinks, and debug system trends with higher precision in **Azure Monitor**.
+- **Disable Virtual Network Peering Route** *(In Preview)*\
+  A new control flag in user-defined route tables allows platform engineers to selectively suppress system-generated peering routes across interconnected virtual networks. This enables strict hub-spoke traffic enforcement and prevents inadvertent transitive routing without requiring complex subnet-level route overriding in **Azure Virtual Network**.
+- **Azure Application Gateway: Keyless TLS with Managed HSM** *(Generally Available)*\
+  Application Gateway v2 now terminates TLS handshakes by offloading cryptographic signature operations directly to Azure Key Vault Managed HSM via remote procedure calls. Private certificate keys never leave the FIPS 140-3 Level 3 hardware boundary, satisfying stringent regulatory requirements for public sector and financial workloads using **Azure Application Gateway**.
+- **Azure Front Door Premium: Service Tag Match Conditions in WAF** *(Generally Available)*\
+  Azure Web Application Firewall (WAF) custom rule policies now natively support service tags as matching criteria. This simplifies ingress filtering by dynamically aligning WAF rule execution with Microsoft-maintained IP address prefixes for downstream services behind **Azure Front Door**.
+- **Azure DNS: Traffic Manager Linked Records** *(Generally Available)*\
+  Apex and subdomain DNS record sets can now be linked directly to Azure Traffic Manager profiles without intermediary CNAME or alias flattening workarounds. This native integration reduces resolution hops and optimizes global routing resilience within **Azure DNS**.
 
 That’s a wrap on this weeks Azure updates, if you found this helpful make sure to follow [blog.atozazure.com](http://blog.atozazure.com) for future updates, guides, and technical insights.
