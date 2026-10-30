@@ -13,49 +13,33 @@ tags: azure, security, databases, devops, networking, containers, update, comput
 
 Welcome to this week’s atozazure weekly wrap for the 30 October 2026. Below are all the key platform changes, additions and retirements for the past week.
 
+## Compute & Storage
+
+- **Item-Level Recovery for Azure VMs with Premium SSD v2 and Ultra Disks** *(Generally Available)*\
+  Granular single-file and folder-level restore capabilities are now supported across virtual machines backed by Premium SSD v2 and Ultra Disks with both 512-byte and 4 KB logical sector configurations. This eliminates the necessity of restoring entire disk volumes for targeted operational recovery, substantially lowering operational recovery time objectives (RTO) and egress storage costs in **Azure Backup**.
+- **ABFS Vectored Read for Azure Data Lake Storage** *(Generally Available)*\
+  Compatible big data and distributed analytics runtimes can now issue non-contiguous, batched asynchronous vector read requests against target object stores. This significantly reduces overall storage request overhead and network round-trips for selective columnar and analytical queries hosted on **Azure Data Lake Storage Gen2**.
+- **Automatic Zone Balance for Virtual Machine Scale Sets** *(Generally Available)*\
+  Autonomous cross-zone distribution monitoring and dynamic node rebalancing have been integrated directly into scalable compute topologies. This mitigates infrastructure drift and bolsters zonal resilience during degradation events without manual rebalancing interventions across **Azure Virtual Machine Scale Sets**.
+
 ## Networking & Security
 
+- **Keyless TLS on Application Gateway with Managed HSM** *(Generally Available)*\
+  Hardware-isolated cryptographic offloading is now operational for layer-7 ingress traffic, completing TLS handshake signatures directly inside dedicated FIPS 140-2 Level 3 cryptographic boundaries without exporting private keys. This reinforces strict zero-trust and digital sovereignty perimeters for ingress endpoints managed through **Azure Application Gateway** and **Azure Key Vault Managed HSM**.
+- **Service Tag Matching for Azure Front Door Premium WAF** *(Generally Available)*\
+  Custom Web Application Firewall inspection logic can now incorporate native Microsoft service tag definitions within rule criteria. This simplifies edge security governance and perimeter routing enforcement by dynamically maintaining Microsoft-managed IP ranges within **Azure Front Door**.
+- **Disable VNet Peering Route (DPR)** *(In Preview)*\
+  Granular routing control now allows platform engineers to selectively suppress default system-generated peering routes across individual subnet route tables. This enables deterministic transit hub enforcement and strict egress traffic inspection patterns through central network virtual appliances in **Azure Virtual Network**.
 - **Azure DNS Integration with Traffic Manager Linked Records** *(Generally Available)*\
-  Direct linked record support between **Azure DNS** and **Azure Traffic Manager** profiles eliminates intermediate CNAME resolution hops, streamlining geo-routing management and reducing client-side DNS lookup latency.
-- **Keyless TLS via Azure Key Vault Managed HSM for Application Gateway** *(Generally Available)*\
-  **Application Gateway v2** now natively offloads TLS handshakes to **Azure Key Vault Managed HSM** without private keys ever leaving hardware cryptographic boundaries, reinforcing FIPS 140-2 Level 3 cryptographic compliance.
-- **External Key Management for Azure Key Vault Managed HSM** *(Generally Available)*\
-  Sovereign key orchestration allows enterprise workloads to control root encryption keys external to Azure within **Azure Key Vault Managed HSM**, preserving strict physical cryptographic isolation for cross-region data estates.
-- **Standard Service Endpoints for PaaS Integration** *(Generally Available)*\
-  Enhanced **Azure Virtual Network** service endpoints scale perimeter security boundary controls across core PaaS tiers, reducing subnet scaling constraints whilst enforcing strict network isolation.
-- **Hardware Audit Logging for Azure Cloud HSM** *(Generally Available)*\
-  Tenant instances under **Azure Dedicated HSM / Cloud HSM** now output tamper-evident hardware-level audit trails, accelerating compliance verification and forensic reporting for strictly regulated environments.
+  Direct record linking enables native DNS-based traffic steering and health probing without provisioning intermediate CNAME records at apex domains. This optimises multi-region failover latency, simplifies root-domain zone architecture, and improves routing performance within **Azure DNS**.
 
-## Compute & Containers
+## Identity & Governance
 
-- **Automatic Zone Balance for Virtual Machine Scale Sets** *(Generally Available)*\
-  Continuous topology telemetry in **Azure Virtual Machine Scale Sets (VMSS)** automatically redistributes VM instances across Availability Zones during capacity drift, ensuring uninterrupted SLA availability without operational intervention.
-- **Emergency Security Runtime Rollouts for Azure App Service** *(Generally Available)*\
-  Platform-wide runtime patch updates for PHP, Node.js, and Python alongside intermediate CA trust updates have been deployed across **Azure App Service**, addressing critical remote execution vulnerabilities and certificate trust paths.
-
-## Databases, Storage & Analytics
-
-- **Private Network Gateway for Azure Databricks** *(In Preview)*\
-  Serverless compute environments in **Azure Databricks** can now route outbound connectivity to private virtual networks and on-premises hubs via a managed private egress gateway, removing complex NAT gateway configurations.
-- **Cross-Region Data Copy and Synchronisation via Azure Storage Mover** *(In Preview)*\
-  Orchestrated delta replication across storage accounts and regions is now supported in **Azure Storage Mover**, enabling automated hybrid and cloud-to-cloud disaster recovery pipelines for **Azure Files**.
-- **Item-Level Recovery for Premium SSD v2 and Ultra Disks** *(Generally Available)*\
-  Granular file- and folder-level restore capabilities in **Azure Backup** now support next-generation high-performance **Azure Managed Disks (Premium SSD v2 & Ultra Disk)**, cutting Recovery Time Objectives (RTO) for I/O-intensive workloads.
-- **Safe Key Rotation Visibility for Azure Cosmos DB** *(Generally Available)*\
-  Enhanced lifecycle telemetry in **Azure Cosmos DB** provides proactive audit visibility into primary and secondary key rotation workflows, mitigating client credential drops and inadvertent access disruptions.
-
-## AI & Machine Learning
-
-- **Decisions API Availability in Microsoft Azure AI Foundry** *(Generally Available)*\
-  The OpenAI Decisions API is integrated directly into **Azure AI Foundry**, offering low-latency structured decision-tree evaluations and reasoning controls for enterprise agentic architectures.
-- **Per-Agent Managed Identity Support in Microsoft Copilot Studio** *(Generally Available)*\
-  Autonomous agents built in **Microsoft Copilot Studio** can now be assigned granular **Microsoft Entra ID** managed identities, enforcing least-privilege role assignments across backing Azure enterprise APIs and vector stores.
-
-## Retirements & Lifecycle Notices
-
-- **Azure Functions .NET In-Process Model Retirement Reminder** *(Retiring)*\
-  Formal support for the .NET in-process execution model in **Azure Functions** concludes on 10 November 2026; development teams must transition existing Function Apps to the out-of-process isolated worker model to maintain platform support.
-- **Azure Key Vault Legacy Control Plane API Versions Deprecation Notice** *(Retiring)*\
-  Management API versions prior to `2026-02-01` for **Azure Key Vault** will cease functioning on 27 February 2027, requiring platform engineers to upgrade deployment scripts and toolsets to Azure CLI 2.90.0+ or Az.KeyVault 6.6.1+.
+- **Safe Key Rotation Metadata for Azure Cosmos DB** *(Generally Available)*\
+  Administrative planes now expose granular last-used timestamp telemetry alongside master and secondary access keys. This visibility enables security operations teams to confidently plan, execute, and validate zero-downtime secret rotations while deprecating stale access keys across **Azure Cosmos DB**.
+- **Choose Your Own Telephony (CYOT) Provider for Entra** *(Generally Available)*\
+  Enterprises can now route multi-factor authentication SMS and voice verification traffic through existing, enterprise-contracted third-party telecommunications carriers. This expands carrier diversity, optimises regional messaging costs, and meets strict corporate regulatory agreements within **Microsoft Entra ID**.
+- **Advanced Platform Metrics & Metrics Usage Insights** *(Generally Available)*\
+  High-fidelity platform signals alongside granular workspace metric consumption telemetry are now accessible across central operational dashboards. This enables platform administrators to profile metric ingestion costs, detect unutilised monitoring sinks, and debug system trends with higher precision in **Azure Monitor**.
 
 That’s a wrap on this weeks Azure updates, if you found this helpful make sure to follow [blog.atozazure.com](http://blog.atozazure.com) for future updates, guides, and technical insights.
