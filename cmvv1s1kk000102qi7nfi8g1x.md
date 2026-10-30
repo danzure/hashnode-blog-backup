@@ -13,31 +13,41 @@ tags: azure, security, databases, devops, networking, containers, update, comput
 
 Welcome to this week’s atozazure weekly wrap for the 30th October 2026. Below are all the key platform changes, additions and retirements for the past week.
 
-## Storage & Databases
+## AI & Machine Learning
 
-- **Azure Backup: Item-Level Recovery for Premium SSD v2 and Ultra Disks** *(Generally Available)*\
-  Azure Backup now enables Item-Level Recovery (ILR) for virtual machines running on Premium SSD v2 and Ultra Disks supporting both 512-byte and 4KB logical sector sizes. This capability significantly improves recovery point objectives (RPO) and operational agility by allowing granular file and folder extraction without requiring full volume or virtual machine restores in **Azure Backup**.
-- **Azure Data Lake Storage: ABFS Vectored Read** *(Generally Available)*\
-  The Azure Blob File System (ABFS) driver now supports Vectored Read APIs, coalescing disjointed columnar file segments into unified asynchronous read requests. This architectural enhancement cuts round-trip request overhead and latency significantly for analytics engines querying Parquet and ORC formats hosted on **Azure Data Lake Storage**.
-- **Azure Cosmos DB: Safe Key Rotation** *(Generally Available)*\
-  Safe Key Rotation introduces automated pre-flight validation against account key access logs, blocking key regeneration if active transactions occurred within the preceding 12 hours. This eliminates accidental production outages caused by premature credential revocation during secrets lifecycle transitions or migration to Microsoft Entra ID in **Azure Cosmos DB**.
+- **Microsoft Copilot Harness in Microsoft Foundry Agent Service** *(Generally Available)*\
+  Microsoft has introduced the production-ready Agent Harness runtime within the Foundry ecosystem, standardising deployment pipelines and runtime isolation for autonomous multi-agent systems. This significantly reduces operational scaffolding overhead when orchestrating agent fleets across **Azure AI Foundry**.
+- **Claude Cost Attribution and Tagging in Foundry** *(Generally Available)*\
+  Anthropic Claude model consumption, endpoints, and deployments now natively surface resource tags and direct cost metrics inside Microsoft Foundry. This provides cloud architects and FinOps teams with granular cost centre allocation and consolidated billing transparency for **Azure AI Foundry**.
+- **Azure AI Speech LLM 09-2026 Broader Locale Support** *(In Preview)*\
+  The updated multimodal speech reasoning engine introduces expanded dialect parsing and cross-lingual translation capabilities for enterprise audio streams. This enhancement lowers latency and transcription word error rates (WER) across edge and cloud deployments in **Azure AI Speech**.
 
-## Identity & Access Management
+## Networking & Security
 
-- **Microsoft Entra ID: Choose Your Own Telephony (CYOT)** *(In Preview)*\
-  Organizations can now integrate approved third-party telecommunications providers to deliver SMS and voice multi-factor authentication (MFA) verifications directly. This provides enhanced compliance and cost control over telephony routes, bypassing standard platform SMS delivery rails for **Microsoft Entra ID**.
-- **Entra Global Secure Access Client for Windows v2.34.222** *(Generally Available)*\
-  The latest Windows client update adds refined local network bypass rules, granular Conditional Access evaluation points, and expanded client-side connection telemetry. These enhancements reduce network path friction for split-tunnel scenarios and accelerate diagnostics in **Microsoft Entra Private Access** and **Microsoft Entra Internet Access**.
+- **Azure Front Door Multi-Scope WAF Policy Association** *(Generally Available)*\
+  Web Application Firewall (WAF) policies can now be linked flexibly at the profile, domain, or route tier within a single CDN profile. This decouples global protection rules from bespoke endpoint policies, optimising ingress security management and reducing policy sprawl across **Azure Front Door**.
+- **Azure Network Watcher Flow Log Volume Filtering** *(Generally Available)*\
+  Network Watcher now supports custom Layer 4 packet matching and flow filtering rules prior to log persistence. This allows platform engineers to exclude non-essential IP traffic from ingestion, substantially curbing Log Analytics data ingestion costs for **Azure Network Watcher**.
 
-## Networking & Infrastructure
+## Governance & Management
 
-- **Disable Virtual Network Peering Route** *(In Preview)*\
-  A new control flag in user-defined route tables allows platform engineers to selectively suppress system-generated peering routes across interconnected virtual networks. This enables strict hub-spoke traffic enforcement and prevents inadvertent transitive routing without requiring complex subnet-level route overriding in **Azure Virtual Network**.
-- **Azure Application Gateway: Keyless TLS with Managed HSM** *(Generally Available)*\
-  Application Gateway v2 now terminates TLS handshakes by offloading cryptographic signature operations directly to Azure Key Vault Managed HSM via remote procedure calls. Private certificate keys never leave the FIPS 140-3 Level 3 hardware boundary, satisfying stringent regulatory requirements for public sector and financial workloads using **Azure Application Gateway**.
-- **Azure Front Door Premium: Service Tag Match Conditions in WAF** *(Generally Available)*\
-  Azure Web Application Firewall (WAF) custom rule policies now natively support service tags as matching criteria. This simplifies ingress filtering by dynamically aligning WAF rule execution with Microsoft-maintained IP address prefixes for downstream services behind **Azure Front Door**.
-- **Azure DNS: Traffic Manager Linked Records** *(Generally Available)*\
-  Apex and subdomain DNS record sets can now be linked directly to Azure Traffic Manager profiles without intermediary CNAME or alias flattening workarounds. This native integration reduces resolution hops and optimizes global routing resilience within **Azure DNS**.
+- **Public Preview: Cross-Tenant Restore with Azure Backup** *(In Preview)*\
+  Azure Backup now permits virtual machine recovery points to be hydrated directly into isolated secondary or perimeter tenants without replicating duplicate baseline data. This capability hardens operational resilience against tenant-level compromises and ransomware threats across **Azure Backup**.
+- **Item-Level Recovery for Premium SSD v2 & Ultra Disks** *(Generally Available)*\
+  Instant file and folder recovery (ILR) is now fully supported for workloads mounted on 512-byte and 4K native advanced block storage. This eliminates the operational overhead and egress charges associated with restoring entire high-performance virtual machine disks in **Azure Backup**.
+- **Simplified Private Offer Purchasing Experience** *(Generally Available)*\
+  Enterprise agreements and customer tenants can now accept and provision eligible ISV private marketplace offers in a single atomic transaction. This replaces the legacy two-stage acceptance flow, accelerating procurement velocity through the **Azure Marketplace**.
+
+## Databases & Storage
+
+- **Azure Storage Resource Provider (SRP) API Operations Telemetry** *(Generally Available)*\
+  Control plane API calls—including container enumeration, metadata read, and storage key operations—now incorporate enhanced telemetry and auditing semantics. This bolsters access posture auditing and automated compliance reporting for **Azure Blob Storage**.
+
+## Compute & DevOps
+
+- **Azure Container Apps Legacy HTTP Data Collector API Deprecation Notice** *(Retiring)*\
+  Container Apps environments forwarding diagnostics via the legacy HTTP Data Collector pipeline must be updated following its formal end-of-support milestone. Platform teams must transition ingestion streams to modern Data Collection Rules (DCR) to prevent telemetry telemetry failure in **Azure Container Apps**.
+- **Azure DevOps Server 2026 Release Candidate (26H2)** *(In Preview)*\
+  Microsoft has released the release candidate milestone for on-premises enterprise environments, supporting direct in-place migrations from Team Foundation Server 2015+. This brings modern Azure Pipelines capabilities and platform security patches to self-hosted instances of **Azure DevOps Server**.
 
 That’s a wrap on this weeks Azure updates, if you found this helpful make sure to follow [blog.atozazure.com](http://blog.atozazure.com) for future updates, guides, and technical insights.
