@@ -11,44 +11,51 @@ tags: azure, security, databases, devops, networking, containers, update, comput
 
 ---
 
-Welcome to this week’s atozazure weekly wrap for the 30th October 2026. Below are all the key platform changes, additions and retirements for the past week.
+Welcome to this week’s atozazure weekly wrap for the 30 October 2026. Below are all the key platform changes, additions and retirements for the past week.
 
 ## Networking & Security
 
 - **Azure DNS Integration with Traffic Manager Linked Records** *(Generally Available)*\
-  Seamless DNS-based traffic steering is now supported via linked record sets in **Azure DNS**, removing the requirement to configure external CNAME pointers towards Traffic Manager profiles. This reduces resolution latency hops, streamlines zone management, and reinforces resilient active-passive or weighted multi-region architectures.
+  Direct linked record support between **Azure DNS** and **Azure Traffic Manager** profiles eliminates intermediate CNAME resolution hops, streamlining geo-routing management and reducing client-side DNS lookup latency.
+- **Keyless TLS via Azure Key Vault Managed HSM for Application Gateway** *(Generally Available)*\
+  **Application Gateway v2** now natively offloads TLS handshakes to **Azure Key Vault Managed HSM** without private keys ever leaving hardware cryptographic boundaries, reinforcing FIPS 140-2 Level 3 cryptographic compliance.
 - **External Key Management for Azure Key Vault Managed HSM** *(Generally Available)*\
-  Workloads governed by strict data sovereignty standards can now manage root key-encryption keys outside of cloud boundaries through **Azure Key Vault**. This allows enterprises to preserve cryptographic isolation while utilising native platform encryption across multi-region resources.
-- **Routable and Non-Advertised Azure Virtual Network Address Spaces** *(In Preview)*\
-  Platform engineers can now assign non-advertised and private routable CIDR blocks within **Azure Virtual Network** topologies without propagating them across ExpressRoute or VPN gateways. This mitigates enterprise IPv4 address exhaustion and simplifies private subnet provisioning for high-density container platforms.
+  Sovereign key orchestration allows enterprise workloads to control root encryption keys external to Azure within **Azure Key Vault Managed HSM**, preserving strict physical cryptographic isolation for cross-region data estates.
 - **Standard Service Endpoints for PaaS Integration** *(Generally Available)*\
-  Offering enhanced scalability and boundary controls, updated standard service endpoints simplify perimeter isolation when connecting IaaS subnets to core **Azure Storage** and PaaS resources. This avoids classic endpoint scale limits while maintaining strict network policy enforcement.
+  Enhanced **Azure Virtual Network** service endpoints scale perimeter security boundary controls across core PaaS tiers, reducing subnet scaling constraints whilst enforcing strict network isolation.
 - **Hardware Audit Logging for Azure Cloud HSM** *(Generally Available)*\
-  Hardware-level audit trails are now directly accessible for dedicated HSM tenant instances in **Azure Dedicated HSM**, providing cryptographically verifiable, non-repudiable logs for compliance-driven banking and defence deployments.
+  Tenant instances under **Azure Dedicated HSM / Cloud HSM** now output tamper-evident hardware-level audit trails, accelerating compliance verification and forensic reporting for strictly regulated environments.
 
 ## Compute & Containers
 
-- **Out-of-Band Security Runtime Updates for Azure App Service & Functions** *(Generally Available)*\
-  Emergency runtime patches addressing the upstream Brotli decoder remote execution vulnerability and CA certificate trust mitigations have been deployed across **Azure App Service** and **Azure Functions**. Built-in Linux and Windows worker environments for .NET, Node.js, and Python have been automatically updated across Standard and Latest release channels.
 - **Automatic Zone Balance for Virtual Machine Scale Sets** *(Generally Available)*\
-  Automated zonal rebalancing continuously monitors compute distribution across Availability Zones within **Azure Virtual Machine Scale Sets (VMSS)**. The platform automatically shifts and reallocates healthy instances to remediate zonal capacity drift without requiring manual engineering intervention.
-- **Azure Container Registry Scale Metrics and Geo-Replication Telemetry** *(Generally Available)*\
-  Fine-grained transaction and egress data transfer metrics are now published at scale for each replica in **Azure Container Registry**. This provides platform operators with deep observability into per-region traffic distribution, bandwidth expenditure, and cross-region pull operations.
+  Continuous topology telemetry in **Azure Virtual Machine Scale Sets (VMSS)** automatically redistributes VM instances across Availability Zones during capacity drift, ensuring uninterrupted SLA availability without operational intervention.
+- **Emergency Security Runtime Rollouts for Azure App Service** *(Generally Available)*\
+  Platform-wide runtime patch updates for PHP, Node.js, and Python alongside intermediate CA trust updates have been deployed across **Azure App Service**, addressing critical remote execution vulnerabilities and certificate trust paths.
 
 ## Databases, Storage & Analytics
 
-- **Azure Databricks Serverless Private Network Gateway** *(In Preview)*\
-  Serverless compute environments in **Azure Databricks** can now route outbound connectivity into private virtual networks and on-premises environments via a managed private network gateway. This eliminates bespoke NAT instances and complex transitive peering architectures for serverless clusters.
-- **Cross-Region Replication and Delta Sync via Azure Storage Mover** *(In Preview)*\
-  Orchestrated cross-region data movement and delta synchronisation jobs are now natively supported for SMB and NFS shares using **Azure Storage Mover**. This simplifies hybrid storage migration and automated disaster recovery replication across distinct Azure regions and subscriptions.
-- **Advanced Capacity Insights in Azure Storage Discovery** *(Generally Available)*\
-  Enhanced analytical telemetry within **Azure Storage** now provides automated visibility into data tier distribution, object ages, and access frequency patterns. This enables platform teams to pinpoint unattached or cold data and automate lifecycle management policies to cut consumption expenditure.
+- **Private Network Gateway for Azure Databricks** *(In Preview)*\
+  Serverless compute environments in **Azure Databricks** can now route outbound connectivity to private virtual networks and on-premises hubs via a managed private egress gateway, removing complex NAT gateway configurations.
+- **Cross-Region Data Copy and Synchronisation via Azure Storage Mover** *(In Preview)*\
+  Orchestrated delta replication across storage accounts and regions is now supported in **Azure Storage Mover**, enabling automated hybrid and cloud-to-cloud disaster recovery pipelines for **Azure Files**.
+- **Item-Level Recovery for Premium SSD v2 and Ultra Disks** *(Generally Available)*\
+  Granular file- and folder-level restore capabilities in **Azure Backup** now support next-generation high-performance **Azure Managed Disks (Premium SSD v2 & Ultra Disk)**, cutting Recovery Time Objectives (RTO) for I/O-intensive workloads.
+- **Safe Key Rotation Visibility for Azure Cosmos DB** *(Generally Available)*\
+  Enhanced lifecycle telemetry in **Azure Cosmos DB** provides proactive audit visibility into primary and secondary key rotation workflows, mitigating client credential drops and inadvertent access disruptions.
 
-## Hybrid & Cloud Management
+## AI & Machine Learning
 
-- **Scheduled Control Plane Backups for Disconnected Azure Local** *(Generally Available)*\
-  Automated control plane backups are now natively integrated into **Azure Local**, ensuring high-availability state persistence even during protracted disconnected operations and streamlining edge cluster disaster recovery workflows.
-- **Workload Landing Zone Governance Alignment in CAF** *(Generally Available)*\
-  Microsoft has updated the Cloud Adoption Framework to formalise "Workload Landing Zones" (formerly Application Landing Zones) within **Azure Policy** and resource organisation guidance, aligning landing zone governance frameworks with modern Well-Architected operational models.
+- **Decisions API Availability in Microsoft Azure AI Foundry** *(Generally Available)*\
+  The OpenAI Decisions API is integrated directly into **Azure AI Foundry**, offering low-latency structured decision-tree evaluations and reasoning controls for enterprise agentic architectures.
+- **Per-Agent Managed Identity Support in Microsoft Copilot Studio** *(Generally Available)*\
+  Autonomous agents built in **Microsoft Copilot Studio** can now be assigned granular **Microsoft Entra ID** managed identities, enforcing least-privilege role assignments across backing Azure enterprise APIs and vector stores.
+
+## Retirements & Lifecycle Notices
+
+- **Azure Functions .NET In-Process Model Retirement Reminder** *(Retiring)*\
+  Formal support for the .NET in-process execution model in **Azure Functions** concludes on 10 November 2026; development teams must transition existing Function Apps to the out-of-process isolated worker model to maintain platform support.
+- **Azure Key Vault Legacy Control Plane API Versions Deprecation Notice** *(Retiring)*\
+  Management API versions prior to `2026-02-01` for **Azure Key Vault** will cease functioning on 27 February 2027, requiring platform engineers to upgrade deployment scripts and toolsets to Azure CLI 2.90.0+ or Az.KeyVault 6.6.1+.
 
 That’s a wrap on this weeks Azure updates, if you found this helpful make sure to follow [blog.atozazure.com](http://blog.atozazure.com) for future updates, guides, and technical insights.
