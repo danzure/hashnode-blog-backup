@@ -7,7 +7,7 @@ cuid: cmw51tvif000102ml3ay25bjl
 slug: weekly-wrap-06112026
 cover: https://cdn.hashnode.com/uploads/covers/6862cf4acc277a35bb68ec0f/4af3d744-4251-4641-bb0b-7032a52560e9.jpg
 ogImage: https://cdn.hashnode.com/uploads/og-images/6862cf4acc277a35bb68ec0f/26760c59-6386-490d-826b-3f2c2f24c30e.jpg
-tags: ai, microsoft, azure, devops, containers, azure-devops, atozazure
+tags: ai, microsoft, azure, devops, containers, ml, azure-devops, atozazure
 
 ---
 
